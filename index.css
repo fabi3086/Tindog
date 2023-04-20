@@ -1,0 +1,73 @@
+/* LAYOUT */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
+}
+
+.header{
+    display: flex;
+    column-gap: 5.5em;
+    margin-left: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.7em;
+}
+
+.icon-profile,
+.icon-chat,
+.icon-paw{
+    height: 5vh;
+}
+
+#card .dog-img {
+    width: 100%;
+    border-radius: 13px; 
+}
+
+#card {
+    position: relative;
+    width: 100%;
+}
+
+.dog-info {
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    left: 10px;
+}
+
+.badges {
+    position: absolute;
+    top: 2em;
+    left: 0.4em;
+    transform: rotate(-35deg);
+}
+
+#accept-button,
+#reject-button{
+    border-radius: 50%;
+    border: none;
+    padding: 0.9em;
+}
+
+#accept-button:hover{
+    background-color: lightgreen;
+}
+
+#reject-button:hover{
+    background-color: lightcoral;
+}
+
+.actions{
+    display: flex;
+    justify-content: center;
+    column-gap: 1em;
+    margin-top: 0.5em;
+}
+
+
+@media(min-width: 800px) {
+    .header{
+        margin-left: 20em;
+    }
+}
